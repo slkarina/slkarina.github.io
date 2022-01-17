@@ -2,54 +2,61 @@
 <head>
 <style>
 .menu{
-background-color:black;
+background:linear-gradient(to right,white,white,blue);
 width:100%;
-height:60px;
+height:50px;
 }
 body{
 margin:0px;
-padding:0px;
+background:radial-gradient(ellipse at center 150px,blue,black);
+color:white;
+font-family:cursive;
 }
 a{
+margin-left:10px;
 text-decoration:none;
+font-family:cursive;
+}
+a:hover{
+color:red;
+}
+.red:valid{
+background:green;
+}
+.red:invalid{
+background:red;
+}
+.gh{
+padding:10px;
 color:white;
-font-size:150%;
+font-family:cursive;
+background:linear-gradient(to right,purple,red);
 }
-.button{
-float:left;
-margin:20px;
-}
-.main{
-width:100%;
-height:400px;
-background-color:black;
-}
-.text{
-padding:20px;
-font-size:200%;
-color:white;
-margin:150px;
-float:left;
-}
-.kar{
-float:right;
-}
-img{
-height:400px;
-width:350px;
+.gh:hover{
+background:linear-gradient(to right,red,purple);
 }
 </style>
 </head>
 <body>
 <div class="menu">
-	<div class="button"><a href="">головна</a></div>
-	<div class="button"><a href="file:///C:/Users/StudyLink/Desktop/StudyLink/%D0%9F%D1%96%D0%B4%D0%B1%D0%B5%D1%80%D0%B5%D0%B7%D0%BD%D0%B0%20%D0%9A%D0%B0%D1%80%D0%B8%D0%BD%D0%B0/t16/Z2/new%201.html">про себе</a></div>
+<br>
+<a href="">Анкета</a><a href="">Результат</a>
 </div>
-<h1 align="center">Сайт молодого програміста</h1>
-<div class="main">
-	<div class="text">Сайт створив учень Study link<br>
-	Ім'я прізвище</div>
-	<div class="kar"><img src="https://all-psd.ru/uploads/posts/2011-05/keyboard-button-psd-template.jpg"></div>
-</div>
+<h1 align="center">Анкета учасника</h1>
+<form>
+<label>Введіть ваше ім'я</label><br>
+<input type="text" class="red"><br>
+<label>Введіть ваш клас</label><br>
+<input type="number" min="1" max="12" class="red" ><br>
+<label>Введіть ваш e-mail</label><br>
+<input type="email" class="red"><br>
+<br>
+<label>Які мови ви знаєте?</label><br>
+<input type="checkbox" name="a1">Українська<br>
+<input type="checkbox" name="a2">Російська<br>
+<input type="checkbox" name="a3">Англійська<br>
+<input type="checkbox" name="a4">Німецька<br>
+<input type="submit" value="Перевірка" class="gh">
+</form>
 </body>
-</html>
+</html> 
